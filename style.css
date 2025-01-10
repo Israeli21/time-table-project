@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr); /* 24 columns for each hour */
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+.box {
+    width: 40px;
+    height: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.box:hover {
+    border-color: #000;
+}
+
+.test1 
+{ 
+	border: thin solid black; 
+	width:150px; 
+	height:150px; 
+	text-align: justify; 
+	background-color: yellow; 
+	word-wrap: break-word; /* words won't go from the boundry */ 
+	margin: 10px 20px auto; 
+	/* top, left, bottom*/ 
+	padding: 10px 20px 30px; 
+	float: left; 
+}
+
+.hour-labels{
+    font-size: 10.15px;
+    margin-top: 0px;
+}
