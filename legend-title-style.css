@@ -1,0 +1,51 @@
+/* TEXT SECTION */
+.website-title{
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+
+.subtitle-purpose{
+    font-size: 22px;
+    margin-top: -4px;
+    white-space: nowrap;
+}
+
+.subjects-text{
+    margin-bottom: 0px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* SUBJECTS CONTAINER SECTION */
+.subjects-container{
+    margin-left: 0px;
+}
+
+.subject-idenity-color{
+    height: 18px;
+    width: 18px;
+    border-width: 2px;
+    border-color: black;
+}
+
+.labels-extra{
+    margin-left: 0px;
+    width: 70px;
+    white-space: nowrap; /* Prevents text from wrapping to the next line */
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 9px;
+}
+
+.sleep{ background-color: black;}
+.social{ background-color: rgb(125, 238, 255);}
+.work{ background-color: rgb(144, 74, 30);}
+.art{ background-color: rgb(205, 0, 44);}
+.school{ background-color: purple; }
+.CS{ background-color: blue; }
+.reading{ background-color: gray; }
+.org{ background-color: darkblue; }
+.exercise{ background-color: green;}
