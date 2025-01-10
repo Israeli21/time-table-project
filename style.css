@@ -2,18 +2,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
-
 .body-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px; /* Creates space between columns */
-    padding: 20px;
+    padding: 0 10vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 80%;
     max-width: 1000px;
     background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grid-container {
@@ -47,7 +45,6 @@ body {
 }
 
 .weekday-container{
-    margin-left: 20px;
     height: 300px;
     width: 200px;
 }
@@ -57,4 +54,10 @@ body {
     margin-top: 2px;
     margin-bottom: 0px;
     font-size: 20px;
+}
+
+.subject-skill{
+    width: 24px;
+    font-size: 12px;
+    margin-bottom: 2px;
 }
