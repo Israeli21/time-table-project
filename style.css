@@ -4,8 +4,32 @@ body {
 
 .website-title{
     font-weight: bold;
-    margin-left: 20px;
-    font-size: 30px;
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.subtitle-purpose{
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.subjects-text{
+    margin-bottom: 0px;
+    text-decoration: underline;
+}
+
+.body-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px; /* Creates space between columns */
+    padding: 20px;
+    width: 80%;
+    max-width: 1000px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .grid-container {
@@ -34,8 +58,12 @@ body {
 
 .weekday-container{
     margin-left: 20px;
+    height: 300px;
+    width: 200px;
 }
 
 .single-weekday{
     font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 4px;
 }
