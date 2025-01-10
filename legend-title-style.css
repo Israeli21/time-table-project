@@ -1,10 +1,14 @@
 /* TEXT SECTION */
 .website-title{
-    font-weight: bold;
+    font-weight: 400;
     font-size: 48px;
     margin-top: 10px;
     margin-bottom: 0px;
     white-space: nowrap;
+
+    font-family: "Passion One", serif;
+    font-weight: 700; /* 400 */
+    font-style: normal;
 }
 
 .subtitle-purpose{
@@ -34,18 +38,18 @@
 .labels-extra{
     margin-left: 0px;
     width: 70px;
-    white-space: nowrap; /* Prevents text from wrapping to the next line */
     font-weight: bold;
-    font-size: 12px;
-    margin-bottom: 9px;
+    font-size: 13px;
+    margin-bottom: 7px;
 }
 
-.sleep{ background-color: black;}
-.social{ background-color: rgb(125, 238, 255);}
-.work{ background-color: rgb(144, 74, 30);}
-.art{ background-color: rgb(205, 0, 44);}
-.school{ background-color: purple; }
-.CS{ background-color: blue; }
-.reading{ background-color: gray; }
-.org{ background-color: darkblue; }
-.exercise{ background-color: green;}
+.sleep{ background-color: rgb(66, 66, 66) !important;}
+.social{ background-color: rgb(142, 240, 255) !important;}
+.work{ background-color: rgb(133, 65, 22) !important;}
+.art{ background-color: rgb(218, 0, 0) !important;}
+.school{ background-color: rgb(142, 0, 203) !important; }
+.CS{ background-color: blue !important; }
+.reading{ background-color: rgb(165, 165, 165) !important; }
+.org{ background-color: rgb(64, 80, 145) !important; }
+.exercise{ background-color: rgb(28, 212, 28) !important;}
+.reset { background-color: white !important;}
