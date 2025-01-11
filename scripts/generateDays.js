@@ -51,7 +51,7 @@ weekDays.forEach((weekDay) => {
     <div class = "weekday-container">
         <p class = "single-weekday">${weekDay.day}</p>
         <div class="grid-container">
-            <div>
+            <div class = "hour-labels-container">
                 <p class = "hour-labels">12am</p>
                 <p class = "hour-labels">1am</p>
                 <p class = "hour-labels">2am</p>
