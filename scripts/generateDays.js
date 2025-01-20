@@ -10,8 +10,15 @@ const weekDays = [
 
 let bodyHTML = `
     <div class = "weekday-container">
-        <p class = "website-title">Time Table</p>
-        <p class = "subtitle-purpose">Time Management</p>
+        <div class="content-wrapper">
+            <a href = "todo-list.html">
+                <button class = "todo-list">To Do List</button>
+            </a>
+            <div>
+                <p class="website-title">Time Table</p>
+                <p class="subtitle-purpose">Time Management</p>
+            </div>
+        </div>
         <p class = "subjects-text">Subjects:</p>
         <div class = "grid-container subjects-container">
             <div>

@@ -1,12 +1,13 @@
 // Load todoList from localStorage if it exists
 // To RESET todoList items to original items. In the console you type:
 // localStorage.removeItem('todoList')
+// import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 let todoList = JSON.parse(localStorage.getItem('todoList')) || [{
     name: 'make dinner',
-    dueDate: '2022-12-22'
+    dueDate: 'December 22, 2022'
 }, {
     name: 'wash dishes',
-    dueDate: '2022-12-22'
+    dueDate: 'December 22, 2022'
 }];
 
 // Render the todo list on page load
@@ -67,3 +68,7 @@ function addTodo() {
 // - If a function has access to a value
 // - It will always have access to that value
 // - values gets packaged together (enclosed) with the function
+
+// Cougar CS Meeting        01/23/2025
+// COSC 3320 Homework 1     01/26/2025
+// COSC 3340 Assignment 1   01/31/2025

@@ -2,6 +2,10 @@ body{
     font-family: Arial;
 }
 
+.todo-list-body{
+    padding: 20px;
+}
+
 .todo-grid,
 .todo-input-grid{
     display: grid;
