@@ -17,6 +17,20 @@ function saveToStorage() {
     localStorage.setItem('todoList', JSON.stringify(todoList));
 }
 
+function resetTasks() {
+    todoList = [{
+        name: 'make dinner',
+        dueDate: 'December 22, 2022'
+    }, {
+        name: 'wash dishes',
+        dueDate: 'December 22, 2022'
+    }];
+    saveToStorage(); // Save the reset list to localStorage
+    renderTodoList(); // Re-render the todo list
+}
+
+document.querySelector('.reset-tasks').addEventListener('click', resetTasks);
+
 // Regular Functions enable Hoisting
 function renderTodoList() {
     let todoListHTML = '';
@@ -35,11 +49,10 @@ function renderTodoList() {
         .forEach((deleteButton, index) => {
             deleteButton.addEventListener('click', () => {
                 todoList.splice(index, 1);
+                saveToStorage();
                 renderTodoList();
             });
         });
-
-    saveToStorage();
 }
 
 document.querySelector('.js-add-todo-button').addEventListener('click', () => {
@@ -58,6 +71,7 @@ function addTodo() {
         dueDate
     });
 
+    saveToStorage();
     inputElement.value = '';
 
     renderTodoList();
@@ -71,4 +85,5 @@ function addTodo() {
 
 // Cougar CS Meeting        01/23/2025
 // COSC 3320 Homework 1     01/26/2025
+// Code[Coogs]              01/27/2025
 // COSC 3340 Assignment 1   01/31/2025

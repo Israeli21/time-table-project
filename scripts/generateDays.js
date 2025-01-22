@@ -11,11 +11,9 @@ const weekDays = [
 let bodyHTML = `
     <div class = "weekday-container">
         <div class="content-wrapper">
-            <button>Home</button>
             <a href = "todo-list.html">
                 <button class = "todo-list">To Do List</button>
             </a>
-            <button>Statistics</button>
             <div>
                 <p class="website-title">Time Table</p>
                 <p class="subtitle-purpose">Time Management</p>
@@ -52,6 +50,7 @@ let bodyHTML = `
                 <p class = "hour-labels labels-extra">(RESET COLOR)</p>
             </div>
         </div>
+        <button class="reset-hours">Reset Hours</button>
     </div>
 `
 

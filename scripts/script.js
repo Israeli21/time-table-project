@@ -1,5 +1,3 @@
-// localStorage.removeItem('box.id')
-
 document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
     let selectedColor = '';
@@ -20,6 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 box.style.backgroundColor = selectedColor;
                 localStorage.setItem(box.id, selectedColor); // Save color to localStorage
             }
+        });
+    });
+
+    document.querySelector('.reset-hours').addEventListener('click', () => {
+        boxes.forEach(box => {
+            box.style.backgroundColor = 'white'; // Reset to white
+            localStorage.removeItem(box.id); // Remove from localStorage
         });
     });
 });

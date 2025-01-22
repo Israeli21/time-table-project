@@ -14,18 +14,20 @@
 .subtitle-purpose{
     font-size: 22px;
     margin-top: -4px;
+    margin-bottom: 10px;
     white-space: nowrap;
 }
 
 .subjects-text{
     margin-bottom: 0px;
+    margin-top: 0px;
     text-decoration: underline;
     font-weight: bold;
 }
 
 /* SUBJECTS CONTAINER SECTION */
 .subjects-container{
-    margin-left: 0px;
+    margin-bottom: 10px;
 }
 
 .subject-idenity-color{
