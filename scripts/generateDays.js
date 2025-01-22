@@ -11,9 +11,11 @@ const weekDays = [
 let bodyHTML = `
     <div class = "weekday-container">
         <div class="content-wrapper">
+            <button>Home</button>
             <a href = "todo-list.html">
                 <button class = "todo-list">To Do List</button>
             </a>
+            <button>Statistics</button>
             <div>
                 <p class="website-title">Time Table</p>
                 <p class="subtitle-purpose">Time Management</p>
@@ -54,6 +56,15 @@ let bodyHTML = `
 `
 
 weekDays.forEach((weekDay) => {
+    let morningHTML = '';
+    let eveningHTML = '';
+    for(let hour = 0; hour < 12; hour++){
+        morningHTML += `<div class="box" id="box-${weekDay.day}-${hour}"></div>`;
+    }
+    for(let hour = 12; hour < 24; hour++){
+        eveningHTML += `<div class="box" id="box-${weekDay.day}-${hour}"></div>`;
+    }
+
     bodyHTML += `
     <div class = "weekday-container">
         <p class = "single-weekday">${weekDay.day}</p>
@@ -73,18 +84,7 @@ weekDays.forEach((weekDay) => {
                 <p class = "hour-labels">11am</p>
             </div>
             <div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
+                ${morningHTML}
             </div>
             <div>
                 <input type = "text" class = "subject-skill">
@@ -115,18 +115,7 @@ weekDays.forEach((weekDay) => {
                 <p class = "hour-labels">11pm</p>
             </div>
             <div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
-                <div class="box" id="box-1"></div>
+                ${eveningHTML}
             </div>
             <div>
                 <input type = "text" class = "subject-skill">
