@@ -47,14 +47,22 @@
 
 .single-weekday-container{
     display: flex;
+    justify-content: space-between;
+}
+
+.single-weekday{
+    font-weight: bold;
+    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    font-size: 20px;
 }
 
 .weekday-date{
-    position: absolute;
-    z-index: 1000;
-    margin-left: 135px;
-    margin-top: 3px;
+    text-align: right;
     font-weight: bold;
+    margin-top: 3px;
+    margin-right: 3px;
 }
 
 .sleep{ background-color: rgb(66, 66, 66) !important;}

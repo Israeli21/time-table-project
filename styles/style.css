@@ -7,7 +7,7 @@ body {
     .body-grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 25px; /* Creates space between columns */
+        gap: 35px; /* Creates space between columns */
         padding: 0 10vw;
         padding-top: 20px;
         padding-bottom: 20px;
@@ -62,16 +62,13 @@ body {
     white-space: nowrap; /* Prevents text from wrapping to the next line */
 }
 
+.primary-legend-container{
+    margin-left: 10px;
+}
+
 .weekday-container{
     height: 300px;
     width: 250px;
-}
-
-.single-weekday{
-    font-weight: bold;
-    margin-top: 2px;
-    margin-bottom: 0px;
-    font-size: 20px;
 }
 
 .subject-skill{

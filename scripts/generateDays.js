@@ -8,13 +8,12 @@ const weekDays = [
     { day: "Friday" }
 ];
 
-
 const today = dayjs();
 const deliveryDate = today.format('MMM. D, YYYY');
 console.log(deliveryDate);
 
 let bodyHTML = `
-    <div class = "weekday-container">
+    <div class = "weekday-container primary-legend-container">
         <div class="content-wrapper">
             <a href = "todo-list.html">
                 <button class = "todo-list">To Do List</button>
