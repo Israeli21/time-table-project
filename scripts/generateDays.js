@@ -8,6 +8,11 @@ const weekDays = [
     { day: "Friday" }
 ];
 
+
+const today = dayjs();
+const deliveryDate = today.format('MMM. D, YYYY');
+console.log(deliveryDate);
+
 let bodyHTML = `
     <div class = "weekday-container">
         <div class="content-wrapper">
@@ -66,7 +71,12 @@ weekDays.forEach((weekDay) => {
 
     bodyHTML += `
     <div class = "weekday-container">
-        <p class = "single-weekday">${weekDay.day}</p>
+        <div class="single-weekday-container">
+            <div>
+                <p class = "single-weekday">${weekDay.day}</p>
+            </div>
+            <div class="weekday-date">${deliveryDate}</div>
+        </div>
         <div class="grid-container">
             <div class = "hour-labels-container">
                 <p class = "hour-labels">12am</p>

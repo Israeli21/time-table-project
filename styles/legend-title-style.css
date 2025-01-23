@@ -45,6 +45,18 @@
     margin-bottom: 7px;
 }
 
+.single-weekday-container{
+    display: flex;
+}
+
+.weekday-date{
+    position: absolute;
+    z-index: 1000;
+    margin-left: 135px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
 .sleep{ background-color: rgb(66, 66, 66) !important;}
 .social{ background-color: rgb(142, 240, 255) !important;}
 .work{ background-color: rgb(133, 65, 22) !important;}
