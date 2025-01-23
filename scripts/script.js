@@ -28,3 +28,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.querySelector('.generate-days').innerHTML = bodyHTML;
+
+// Function to save input values to localStorage
+function saveInputValue(input, key) {
+    localStorage.setItem(key, input.value);
+}
+
+// Function to restore input values from localStorage
+function restoreInputValues() {
+    const inputs = document.querySelectorAll('.subject-skill');
+    inputs.forEach((input, index) => {
+        const key = `subject-skill-${index}`; // Create a unique key for each input
+        const savedValue = localStorage.getItem(key);
+        if (savedValue !== null) {
+            input.value = savedValue; // Restore the value
+        }
+        // Add event listener to save the value on change
+        input.addEventListener('input', () => saveInputValue(input, key));
+    });
+}
+
+// Call the restore function after the HTML is generated
+restoreInputValues();
