@@ -54,7 +54,7 @@ let bodyHTML = `
                 <p class = "hour-labels labels-extra">(RESET COLOR)</p>
             </div>
         </div>
-        <button class="reset-hours">Reset Hours</button>
+        <button class="reset-ALL">RESET ALL</button>
     </div>
 `
 

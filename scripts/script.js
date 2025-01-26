@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
+    const inputs = document.querySelectorAll('.subject-skill');
     let selectedColor = '';
 
     // Load colors from localStorage on page load
@@ -21,15 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.querySelector('.reset-hours').addEventListener('click', () => {
+    // Add event listener to .reset-ALL button
+    document.querySelector('.reset-ALL').addEventListener('click', () => {
+        // Reset colors for all boxes
         boxes.forEach(box => {
             box.style.backgroundColor = 'white'; // Reset to white
             localStorage.removeItem(box.id); // Remove from localStorage
         });
+
+        // Clear text in all inputs
+        inputs.forEach((input, index) => {
+            input.value = ''; // Clear the input
+            localStorage.removeItem(`subject-skill-${index}`); // Remove input value from localStorage
+        });
     });
 });
-
-document.querySelector('.generate-days').innerHTML = bodyHTML;
 
 // Function to save input values to localStorage
 function saveInputValue(input, key) {
