@@ -1,3 +1,5 @@
+let startDate = dayjs('2025-01-25');
+
 const weekDays = [
     { day: "Saturday" },
     { day: "Sunday" },
@@ -58,23 +60,29 @@ let bodyHTML = `
     </div>
 `
 
-weekDays.forEach((weekDay) => {
+weekDays.forEach((weekDay, index) => {
+    // Calculate the date for the current day in the week
+    const currentDate = startDate.add(index, 'day').format('MMM. D, YYYY');
+    
     let morningHTML = '';
     let eveningHTML = '';
-    for(let hour = 0; hour < 12; hour++){
+    
+    // Generate morning and evening hour blocks
+    for(let hour = 0; hour < 12; hour++) {
         morningHTML += `<div class="box" id="box-${weekDay.day}-${hour}"></div>`;
     }
-    for(let hour = 12; hour < 24; hour++){
+    for(let hour = 12; hour < 24; hour++) {
         eveningHTML += `<div class="box" id="box-${weekDay.day}-${hour}"></div>`;
     }
 
+    // Add to the HTML for the week
     bodyHTML += `
     <div class = "weekday-container">
         <div class="single-weekday-container">
             <div>
                 <p class = "single-weekday">${weekDay.day}</p>
             </div>
-            <div class="weekday-date">${deliveryDate}</div>
+            <div class="weekday-date">${currentDate}</div>
         </div>
         <div class="grid-container">
             <div class = "hour-labels-container">
