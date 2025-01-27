@@ -20,12 +20,12 @@ let bodyHTML = `
             <a href = "todo-list.html">
                 <button class = "todo-list">To Do List</button>
             </a>
-            <a href = "routineManager.html">
-                <button>Routine Map</button>
+            <a href = "timeTable.html">
+                <button>Time Table</button>
             </a>
             <div>
-                <p class="website-title">Time Table</p>
-                <p class="subtitle-purpose">Time Management</p>
+                <p class="website-title">Routine Map</p>
+                <p class="subtitle-purpose">Routine Manager</p>
             </div>
         </div>
         <p class = "subjects-text">Subjects:</p>
