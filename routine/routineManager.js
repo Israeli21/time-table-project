@@ -1,13 +1,13 @@
-let startDate = dayjs('2025-01-25');
+let startDate = dayjs('2025-02-01');
 
 const weekDays = [
-    { day: "Saturday" },
-    { day: "Sunday" },
-    { day: "Monday" },
-    { day: "Tuesday" },
-    { day: "Wednesday" },
-    { day: "Thursday" },
-    { day: "Friday" }
+    { day: "Saturdays" },
+    { day: "Sundays" },
+    { day: "Mondays" },
+    { day: "Tuesdays" },
+    { day: "Wednesdays" },
+    { day: "Thursdays" },
+    { day: "Fridays" }
 ];
 
 const today = dayjs();
