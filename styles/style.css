@@ -76,3 +76,7 @@ body {
     font-size: 12px;
     margin-bottom: 2px;
 }
+
+a {
+    text-decoration: none; /* Removes underline */
+}
