@@ -18,10 +18,10 @@ let bodyHTML = `
     <div class = "weekday-container primary-legend-container">
         <div class="content-wrapper">
             <a href = "todo-list.html">
-                <button class = "todo-list">To Do List</button>
+                <button class = "pair-buttons todo-list">To Do List</button>
             </a>
             <a href = "timeTable.html">
-                <button>Time Table</button>
+                <button class = "pair-buttons">Time Table</button>
             </a>
             <div>
                 <p class="website-title">Routine Map</p>

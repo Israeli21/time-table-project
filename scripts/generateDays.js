@@ -22,10 +22,10 @@ let bodyHTML = `
     <div class = "weekday-container primary-legend-container">
         <div class="content-wrapper">
             <a href = "todo-list.html">
-                <button class = "todo-list">To Do List</button>
+                <button class = "pair-buttons todo-list">To Do List</button>
             </a>
             <a href = "routineManager.html">
-                <button>Routine Map</button>
+                <button class = "pair-buttons">Routine Map</button>
             </a>
             <div>
                 <p class="website-title">Time Table</p>

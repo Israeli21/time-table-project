@@ -80,3 +80,15 @@ body {
 a {
     text-decoration: none; /* Removes underline */
 }
+
+.pair-buttons {
+    background-color: white;
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin-right: 2px;
+}
+
+.pair-buttons:hover{
+    cursor: pointer;
+    background-color: rgb(235, 235, 235);
+}
