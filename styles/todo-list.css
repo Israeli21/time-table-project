@@ -56,4 +56,11 @@ a {
 .pair-buttons:hover{
     cursor: pointer;
     /* background-color: rgb(235, 235, 235); */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);  
+}
+
+.task-master{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0px;
 }
