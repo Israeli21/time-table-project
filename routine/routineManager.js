@@ -14,6 +14,10 @@ const today = dayjs();
 const deliveryDate = today.format('MMM. D, YYYY');
 console.log(deliveryDate);
 
+const daysSinceStart = today.diff(startDate, "day"); // Total days passed since start
+const weeksSinceStart = Math.floor(daysSinceStart / 7); // How many full weeks have passed
+const currentWeekStart = startDate.add(weeksSinceStart * 7, "day");
+
 let bodyHTML = `
     <div class = "weekday-container primary-legend-container">
         <div class="content-wrapper">
@@ -65,7 +69,7 @@ let bodyHTML = `
 
 weekDays.forEach((weekDay, index) => {
     // Calculate the date for the current day in the week
-    const currentDate = startDate.add(index, 'day').format('MMM. D, YYYY');
+    const currentDate = currentWeekStart.add(index, 'day').format('MMM. D, YYYY');
     
     let morningHTML = '';
     let eveningHTML = '';
