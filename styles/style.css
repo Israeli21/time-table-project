@@ -19,7 +19,7 @@ body {  font-family: Arial, sans-serif; }
     }
     .subjects-information {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 0.3fr 0.15fr 4fr;
         padding-bottom: 20px;
     }
 }
@@ -119,4 +119,16 @@ a {
 .reset-ALL:hover{
     cursor: pointer;
     background-color: rgb(221, 0, 0);
+}
+
+.subject-tracker-text{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 5px 0px;
+    margin-top: 20px;
+}
+
+.right-align{
+    text-align: right;
+    margin-right: 20px;
 }
