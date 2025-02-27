@@ -4,10 +4,12 @@
 // import dayjs from 'https://unpkg.com/dayjs@1.11.10/esm/index.js';
 let todoList = JSON.parse(localStorage.getItem('todoList')) || [{
     name: 'make dinner',
-    dueDate: 'December 22, 2022'
+    dueDate: 'December 22, 2022',
+    time: '2:15'
 }, {
     name: 'wash dishes',
-    dueDate: 'December 22, 2022'
+    dueDate: 'December 22, 2022',
+    time: '2:15'
 }];
 
 // Render the todo list on page load
@@ -20,10 +22,12 @@ function saveToStorage() {
 function resetTasks() {
     todoList = [{
         name: 'make dinner',
-        dueDate: 'December 22, 2022'
+        dueDate: 'December 22, 2022',
+        time: '2:15 PM'
     }, {
         name: 'wash dishes',
-        dueDate: 'December 22, 2022'
+        dueDate: 'December 22, 2022',
+        time: '2:15 PM'
     }];
     saveToStorage(); // Save the reset list to localStorage
     renderTodoList(); // Re-render the todo list
@@ -35,10 +39,11 @@ document.querySelector('.reset-tasks').addEventListener('click', resetTasks);
 function renderTodoList() {
     let todoListHTML = '';
     todoList.forEach((todoObject, index) => {
-        const { name, dueDate } = todoObject;
+        const { name, dueDate, time } = todoObject;
         const html = `
         <div>${name}</div>
         <div>${dueDate}</div>
+        <div>${time}</div>
             <button class="delete-todo-button js-delete-todo-button">Delete</button>
         `;
         todoListHTML += html;
@@ -66,9 +71,13 @@ function addTodo() {
     const dateInputElement = document.querySelector('.js-due-date-input');
     const dueDate = dateInputElement.value;
 
+    const timeElement = document.querySelector('.js-time-input');
+    const time = timeElement.value;
+
     todoList.push({
         name,
-        dueDate
+        dueDate,
+        time
     });
 
     saveToStorage();
@@ -82,8 +91,3 @@ function addTodo() {
 // - If a function has access to a value
 // - It will always have access to that value
 // - values gets packaged together (enclosed) with the function
-
-// Cougar CS Meeting        01/23/2025
-// COSC 3320 Homework 1     01/26/2025
-// Code[Coogs]              01/27/2025
-// COSC 3340 Assignment 1   01/31/2025
