@@ -63,9 +63,10 @@ let bodyHTML = `
                 <p class = "hour-labels labels-extra">(RESET COLOR)</p>
             </div>
         </div>
+        <button class = "screenshot-button" id = "capture-button">Screenshot</button>
         <button class="reset-ALL">RESET ALL</button>
     </div>
-`
+`;
 
 weekDays.forEach((weekDay, index) => {
     // Calculate the date for the current day in the week

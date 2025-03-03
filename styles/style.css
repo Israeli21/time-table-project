@@ -132,3 +132,15 @@ a {
     text-align: right;
     margin-right: 20px;
 }
+
+.screenshot-button{
+    background-color: white;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 1s;
+}
+
+.screenshot-button:hover{
+    background-color: rgb(235, 235, 235);
+}
