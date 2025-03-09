@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
     const inputs = document.querySelectorAll('.subject-skill');
     let selectedColor = '';
-    let dsaCount = 0;
+    let dsaCount = 0, autCount = 0, proCount = 0, datCount = 0;
 
     // Load colors from localStorage on page load
     boxes.forEach(box => {
@@ -26,12 +26,30 @@ document.addEventListener('DOMContentLoaded', () => {
     inputs.forEach(input => {
         if (input.value.includes("DSA")) {
             dsaCount++;
+        } else if (input.value.includes("AUT")) {
+            autCount++;
+        } else if (input.value.includes("PRO")) {
+            proCount++;
+        } else if (input.value.includes("DAT")) {
+            datCount++;
         }
     });
 
     const dsaHoursElement = document.querySelector('.DSA-hours');
     if (dsaHoursElement) {
         dsaHoursElement.textContent = `${dsaCount} hr`;
+    }
+    const autHoursElement = document.querySelector('.AUT-hours');
+    if(autHoursElement){
+        autHoursElement.textContent = `${autCount} hr`;
+    }
+    const proHoursElement = document.querySelector('.PRO-hours');
+    if(proHoursElement){
+        proHoursElement.textContent = `${proCount} hr`;
+    }
+    const datHoursElement = document.querySelector('.DAT-hours');
+    if(datHoursElement){
+        datHoursElement.textContent = `${datCount} hr`;
     }
 
     // Add event listener to .reset-ALL button
