@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
     const inputs = document.querySelectorAll('.subject-skill');
     let selectedColor = '';
+    let dsaCount = 0;
 
     // Load colors from localStorage on page load
     boxes.forEach(box => {
@@ -22,6 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    inputs.forEach(input => {
+        if (input.value.includes("DSA")) {
+            dsaCount++;
+        }
+    });
+
+    const dsaHoursElement = document.querySelector('.DSA-hours');
+    if (dsaHoursElement) {
+        dsaHoursElement.textContent = `${dsaCount} hr`;
+    }
+
     // Add event listener to .reset-ALL button
     document.querySelector('.reset-ALL').addEventListener('click', () => {
         // Reset colors for all boxes
@@ -36,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.removeItem(`subject-skill-${index}`); // Remove input value from localStorage
         });
     });
+    console.log(`${dsaCount} hr`);
 });
 
 // Function to save input values to localStorage
