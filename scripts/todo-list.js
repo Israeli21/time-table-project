@@ -44,7 +44,7 @@ function renderTodoList() {
         <div>${name}</div>
         <div>${dueDate}</div>
         <div>${time}</div>
-            <button class="delete-todo-button js-delete-todo-button">Delete</button>
+        <button class="delete-todo-button js-delete-todo-button">Delete</button>
         `;
         todoListHTML += html;
     });
