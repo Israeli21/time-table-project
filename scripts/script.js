@@ -1,3 +1,37 @@
+renderSubjectHours();
+
+function renderSubjectHours() {
+    let hoursNumberHTML = `
+    <div class = "right-align">
+        <p class = "DSA-hours"></p>
+        <p class = "AUT-hours"></p>
+        <p class = "PRO-hours"></p>
+        <p class = "DAT-hours"></p>
+    </div>
+    <div>
+        <p>DSA</p>
+        <p>AUT</p>
+        <p>PRO</p>
+        <p>DAT</p>
+    </div>
+    <div>
+        <p>= Algorithms and Data Structures</p>
+        <p>= Automata</p>
+        <p>= Projects</p>
+        <p>= Data Science</p>
+    </div>
+    
+    <button>Add</button>
+    <input></input>
+    <input></input>`;
+
+    document.querySelector('.subjects-information').innerHTML = hoursNumberHTML;
+}
+
+function addToSubjects(){
+    
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
     const inputs = document.querySelectorAll('.subject-skill');
