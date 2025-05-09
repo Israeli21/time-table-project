@@ -146,3 +146,43 @@ a {
 .screenshot-button:hover{
     background-color: rgb(235, 235, 235);
 }
+
+.previous-week,
+.next-week {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    object-position: center;
+}
+
+.previous-week {
+    left: 60px;
+    top: 350px;
+}
+
+.next-week {
+    right: 60px;
+    top: 350px;
+}
+
+.left-arrow-img {
+    margin-top: 2px;
+    margin-right: 2px;
+    width: 16px;
+    height: 23px;
+}
+
+.previous-week .tool-tip {
+    position: absolute;
+    background-color: rgb(136, 136, 136);
+    color: white;
+    padding: 5px 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.previous-week:hover .tool-tip {
+    opacity: 1;
+}
