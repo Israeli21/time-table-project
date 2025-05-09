@@ -4,6 +4,8 @@ body {  font-family: Arial, sans-serif; }
     padding: 0 10vw;
 }
 
+
+
 /* Full Screen Code: */
 @media(min-width: 1251px){
     .body-grid-container {
@@ -38,7 +40,7 @@ body {  font-family: Arial, sans-serif; }
     }
     .subjects-information {
         display: grid;
-        grid-template-columns: 1fr 0.65fr 8fr;
+        grid-template-columns: 40px 60px auto;
         padding-bottom: 20px;
     }
 }

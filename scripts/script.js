@@ -1,5 +1,15 @@
 renderSubjectHours();
 
+function resetTasks() {
+    subjectsInfo = [
+      { classNaim: 'DSA-hours', abbreviation: 'DSA', name: 'Algorithms and Data Structures' },
+      { classNaim: 'AUT-hours', abbreviation: 'AUT', name: 'Automata' },
+      { classNaim: 'PRO-hours', abbreviation: 'PRO', name: 'Projects' },
+      { classNaim: 'DAT-hours', abbreviation: 'DAT', name: 'Data Science' }
+    ];
+    renderSubjectHours();
+}
+
 function renderSubjectHours() {
     let hoursNumberHTML = `
     <div class = "right-align">
@@ -8,7 +18,7 @@ function renderSubjectHours() {
         <p class = "PRO-hours"></p>
         <p class = "DAT-hours"></p>
     </div>
-    <div>
+    <div class = "middle-aligned">
         <p>DSA</p>
         <p>AUT</p>
         <p>PRO</p>
@@ -19,17 +29,48 @@ function renderSubjectHours() {
         <p>= Automata</p>
         <p>= Projects</p>
         <p>= Data Science</p>
-    </div>
-    
+    </div>`;
+
+    /**
+    let hoursNumberHTML = `
+    <div class = "right-align"><p class = "DSA-hours"></p></div>
+    <div><p>DSA</p></div>
+    <div><p>Algorithms and Data Structures</p></div>
+    <div class = "right-align"><p class = "DAT-hours"></p></div>
+    <div><p>DSA</p></div>
+    <div><p>Algorithms and Data Structures</p></div>
+    <div class = "right-align"><p class = "PRO-hours"></p></div>
+    <div><p>DSA</p></div>
+    <div><p>Algorithms and Data Structures</p></div>
+    <div class = "right-align"><p class = "AUT-hours"></p></div>
+    <div><p>DSA</p></div>
+    <div><p>Algorithms and Data Structures</p></div>
+
     <button>Add</button>
-    <input></input>
-    <input></input>`;
+    <input class="subject-abbreviation-input">
+    <input class="subject-name-input">`;
+     */
 
     document.querySelector('.subjects-information').innerHTML = hoursNumberHTML;
 }
 
+function saveToStorage(){
+    localStorage.setItem('subjectsInfo', JSON.stringify(subjectsInfo));
+}
+
 function addToSubjects(){
-    
+    const inputElement = document.querySelector('subject-abbreviation-input');
+    const subjectAb = inputElement.value;
+
+    const inputName = document.querySelector('subject-name-input');
+    const subjectName = inputElement.value;
+
+    subjectsInfo.push({
+        subjectAb,
+        subjectName
+    });
+
+    renderSubjectHours();
 }
 
 document.addEventListener('DOMContentLoaded', () => {
