@@ -150,9 +150,9 @@ a {
 .previous-week,
 .next-week {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
     background-color: white;
     object-position: center;
 }
@@ -174,7 +174,15 @@ a {
     height: 23px;
 }
 
-.previous-week .tool-tip {
+.right-arrow-img {
+    margin-top: 4px;
+    margin-left: 7px;
+    width: 20px;
+    height: 23px;
+}
+
+.previous-week .tool-tip,
+.next-week .tool-tip {
     position: absolute;
     background-color: rgb(136, 136, 136);
     color: white;
@@ -183,6 +191,14 @@ a {
     transition: opacity 0.3s;
 }
 
-.previous-week:hover .tool-tip {
+.previous-week:hover .tool-tip,
+.next-week:hover .tool-tip {
     opacity: 1;
+}
+
+.tool-tip {
+    margin-top: 18px;
+    pointer-events: none;
+    left: 50%;
+    transform: translateX(-50%);
 }
