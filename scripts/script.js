@@ -129,18 +129,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add event listener to .reset-ALL button
     document.querySelector('.reset-ALL').addEventListener('click', () => {
-        // Reset colors for all boxes
-        boxes.forEach(box => {
-            box.style.backgroundColor = 'white'; // Reset to white
-            localStorage.removeItem(box.id); // Remove from localStorage
-        });
+        // Show confirmation dialog
+        const userConfirmed = confirm('ARE YOU SURE YOU WANT TO RESTART ALL?');
 
-        // Clear text in all inputs
-        inputs.forEach((input, index) => {
-            input.value = ''; // Clear the input
-            localStorage.removeItem(`subject-skill-${index}`); // Remove input value from localStorage
-        });
-    });
+        if (userConfirmed) {
+            // Reset colors for all boxes
+            boxes.forEach(box => {
+                box.style.backgroundColor = 'white'; // Reset to white
+                localStorage.removeItem(box.id); // Remove from localStorage
+            });
+
+            // Clear text in all inputs
+            inputs.forEach((input, index) => {
+                input.value = ''; // Clear the input
+                localStorage.removeItem(`subject-skill-${index}`); // Remove input value from localStorage
+            });
+        }
+        // else do nothing
+});
     console.log(`${dsaCount} hr`);
 });
 

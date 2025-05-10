@@ -4,8 +4,6 @@ body {  font-family: Arial, sans-serif; }
     padding: 0 10vw;
 }
 
-
-
 /* Full Screen Code: */
 @media(min-width: 1251px){
     .body-grid-container {
@@ -19,10 +17,9 @@ body {  font-family: Arial, sans-serif; }
         max-width: 1000px;
         background-color: #fff;
     }
-    .subjects-information {
-        display: grid;
-        grid-template-columns: 0.3fr 0.15fr 4fr;
-        padding-bottom: 20px;
+    .previous-week {
+        left: 60px;
+        top: 350px;
     }
 }
 
@@ -38,11 +35,16 @@ body {  font-family: Arial, sans-serif; }
         max-width: 1000px;
         background-color: #fff;
     }
-    .subjects-information {
-        display: grid;
-        grid-template-columns: 40px 60px auto;
-        padding-bottom: 20px;
+    .previous-week {
+        left: 25px;
+        top: 350px;
     }
+}
+
+.subjects-information {
+    display: grid;
+    grid-template-columns: 50px 40px auto;
+    padding-bottom: 20px;
 }
 
 .grid-container {
@@ -135,6 +137,7 @@ a {
     margin-right: 20px;
 }
 
+/* SCREENSHOT BUTTON: */
 .screenshot-button{
     background-color: white;
     padding: 6px 12px;
@@ -147,6 +150,7 @@ a {
     background-color: rgb(235, 235, 235);
 }
 
+/* LEFT AND RIGHT BUTTONS: */
 .previous-week,
 .next-week {
     position: absolute;
@@ -155,11 +159,6 @@ a {
     border-radius: 25px;
     background-color: white;
     object-position: center;
-}
-
-.previous-week {
-    left: 60px;
-    top: 350px;
 }
 
 .next-week {
@@ -186,7 +185,7 @@ a {
     position: absolute;
     background-color: rgb(136, 136, 136);
     color: white;
-    padding: 5px 10px;
+    padding: 5px 12px;
     opacity: 0;
     transition: opacity 0.3s;
 }
