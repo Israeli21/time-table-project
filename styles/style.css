@@ -201,3 +201,25 @@ a {
     left: 50%;
     transform: translateX(-50%);
 }
+
+.subject-header {
+  display: flex;
+  align-items: center;
+}
+
+.subjects-text {
+    margin-right: 10px; /* space between text and button */
+}
+
+.edit-subject-names {
+    position: relative;
+    padding-left: 100px;
+}
+
+.edit-button {
+    background-color: white;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 1s;
+}

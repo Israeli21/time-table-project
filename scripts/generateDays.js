@@ -32,7 +32,12 @@ let bodyHTML = `
                 <p class="subtitle-purpose">Time Management</p>
             </div>
         </div>
-        <p class = "subjects-text">Subjects:</p>
+        <div class="subject-header">
+            <p class="subjects-text">Subjects:</p>
+            <div class="edit-subject-names">
+                <button class="edit-button">Edit</button>
+            </div>
+        </div>
         <div class = "grid-container subjects-container">
             <div>
                 <div class="box subject-idenity-color sleep" id="box-1"></div>
