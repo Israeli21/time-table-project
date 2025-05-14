@@ -43,7 +43,7 @@ body {  font-family: Arial, sans-serif; }
 
 .subjects-information {
     display: grid;
-    grid-template-columns: 50px 40px auto;
+    grid-template-columns: 65px 40px auto;
     padding-bottom: 20px;
 }
 
@@ -214,12 +214,4 @@ a {
 .edit-subject-names {
     position: relative;
     padding-left: 100px;
-}
-
-.edit-button {
-    background-color: white;
-    padding: 3px 12px;
-    border-radius: 12px;
-    font-weight: bold;
-    transition: background-color 0.5s, color 1s;
 }

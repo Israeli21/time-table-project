@@ -73,6 +73,7 @@ function addToSubjects(){
     renderSubjectHours();
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.box');
     const inputs = document.querySelectorAll('.subject-skill');
@@ -146,7 +147,13 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
         // else do nothing
-});
+    });
+
+    // The is the edit names buttons:
+    document.querySelector('.edit-button').addEventListener('click', () => {
+        
+    });
+
     console.log(`${dsaCount} hr`);
 });
 

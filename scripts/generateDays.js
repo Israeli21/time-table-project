@@ -61,11 +61,11 @@ let bodyHTML = `
                 <div class="box subject-idenity-color reset" id="box-1"></div>
             </div>
             <div>
-                <p class = "hour-labels labels-extra">COMPUTER SCI</p>
-                <p class = "hour-labels labels-extra">READING</p>
-                <p class = "hour-labels labels-extra">ORGANIZATION</p>
-                <p class = "hour-labels labels-extra">EXERCISE</p>
-                <p class = "hour-labels labels-extra">(RESET COLOR)</p>
+                <p class = "hour-labels labels-extra longer-names">COMPUTER SCI</p>
+                <p class = "hour-labels labels-extra longer-names">READING</p>
+                <p class = "hour-labels labels-extra longer-names">ORGANIZATION</p>
+                <p class = "hour-labels labels-extra longer-names">EXERCISE</p>
+                <p class = "hour-labels labels-extra longer-names">(RESET COLOR)</p>
             </div>
         </div>
         <button class = "screenshot-button" id = "capture-button">Screenshot</button>

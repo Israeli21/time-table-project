@@ -45,6 +45,28 @@
     margin-bottom: 7px;
 }
 
+.longer-names {
+    width: 110px;
+}
+
+.edit-button {
+    background-color: white;
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: background-color 0.5s, color 1s;
+}
+
+.edit-button:hover{
+    background-color: rgb(235, 235, 235);
+}
+
+.labels-extra.hover-border {
+  position: relative;
+  outline: 1px solid rgb(148, 148, 148);
+  transition: outline 0.2s, color 0.2s;
+}
+
 .single-weekday-container{
     display: flex;
     justify-content: space-between;

@@ -15,3 +15,14 @@ captureButton.addEventListener("click", async () => {
     // Trigger the download
     downloadLink.click();
 });
+
+const editButton = document.querySelector('.edit-button');
+const labelsExtra = document.querySelectorAll('.labels-extra');
+
+editButton.addEventListener('mouseenter', () => {
+  labelsExtra.forEach(label => label.classList.add('hover-border'));
+});
+
+editButton.addEventListener('mouseleave', () => {
+  labelsExtra.forEach(label => label.classList.remove('hover-border'));
+});
