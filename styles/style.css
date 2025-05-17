@@ -144,6 +144,7 @@ a {
     border-radius: 12px;
     font-weight: bold;
     transition: background-color 0.5s, color 1s;
+    cursor: pointer;
 }
 
 .screenshot-button:hover{
@@ -214,4 +215,15 @@ a {
 .edit-subject-names {
     position: relative;
     padding-left: 100px;
+}
+
+.edit-focus-hours {
+    position: relative;
+    margin-left: 50px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    cursor: pointer;
 }

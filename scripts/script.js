@@ -17,18 +17,23 @@ function renderSubjectHours() {
         <p class = "AUT-hours"></p>
         <p class = "PRO-hours"></p>
         <p class = "DAT-hours"></p>
+        <p>0 hr</p>
     </div>
     <div class = "middle-aligned">
         <p>DSA</p>
         <p>AUT</p>
         <p>PRO</p>
         <p>DAT</p>
+        <input placeholder = "Abr."
+        class = "js-abb-input abbreviation-input">
     </div>
     <div>
         <p>= Algorithms and Data Structures</p>
         <p>= Automata</p>
         <p>= Projects</p>
         <p>= Data Science</p>
+        =<input placeholder = "Focus Hour Name"
+        class = "js-focusHour-input focus-hour-input">
     </div>`;
 
     /**
