@@ -14,6 +14,7 @@ function renderTodoList(){
     todoList.forEach((todoObject, index) =>{
         const {abb, dueDate} = todoObject;
         const html = `
+        <div  class="focus-hour-number"><p>0 hr.</p></div>
         <div class="right-alignment">${abb}</div>
         <div>= ${dueDate}</div>
             <button class = "delete-todo-button js-delete-todo-button">Delete</button>

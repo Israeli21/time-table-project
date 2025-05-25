@@ -5,7 +5,7 @@ body{
 .todo-grid,
 .todo-input-grid{
     display: grid;
-    grid-template-columns: 45px 250px 100px;
+    grid-template-columns: 50px 45px 300px 100px;
     column-gap: 10px;
     row-gap: 10px;
     align-items: center;
@@ -18,6 +18,13 @@ body{
 
 .right-alignment{
     text-align: right;
+}
+
+.focus-hour-number{
+    height: 32px;
+    display: flex;
+    align-items: center;        /* vertical alignment */
+    justify-content: center;    /* horizontal alignment */
 }
 
 .name-input,
