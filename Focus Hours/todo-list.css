@@ -34,7 +34,8 @@ body{
 }
 
 .add-todo-button,
-.delete-todo-button{
+.delete-todo-button,
+.edit-focus-hours-button{
     background-color: green;
     color: white;
     border: none;
@@ -48,9 +49,25 @@ body{
     padding-bottom: 10px;
 }
 
+.edit-focus-hours-button{
+    background-color: black;
+    padding: 0px 12px;
+    margin-left: 245px;
+    margin-top: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .focus-hour-subtitle{
     font-weight: 700;
     font-size: 22px;
-    margin: 5px 0px;
+    margin: 10px 0px;
     margin-top: 20px;
+}
+
+.focus-hour-top-section{
+    display: flex;
+    width: 550px;
 }
