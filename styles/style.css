@@ -227,3 +227,8 @@ a {
     border-radius: 12px;
     cursor: pointer;
 }
+
+.abbreviation-input,
+.focus-hour-input {
+    margin: 16px 0px;
+}

@@ -1,0 +1,49 @@
+body{
+    font-family: Arial;
+}
+
+.todo-grid,
+.todo-input-grid{
+    display: grid;
+    grid-template-columns: 45px 250px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.todo-input-grid{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.right-alignment{
+    text-align: right;
+}
+
+.name-input,
+.focus-hour-input{
+    font-size: 15px;
+    padding: 6px;
+}
+
+.add-todo-button,
+.delete-todo-button{
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.delete-todo-button{
+    background-color: darkred;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.focus-hour-subtitle{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 5px 0px;
+    margin-top: 20px;
+}

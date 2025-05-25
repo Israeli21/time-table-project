@@ -36,26 +36,6 @@ function renderSubjectHours() {
         class = "js-focusHour-input focus-hour-input">
     </div>`;
 
-    /**
-    let hoursNumberHTML = `
-    <div class = "right-align"><p class = "DSA-hours"></p></div>
-    <div><p>DSA</p></div>
-    <div><p>Algorithms and Data Structures</p></div>
-    <div class = "right-align"><p class = "DAT-hours"></p></div>
-    <div><p>DSA</p></div>
-    <div><p>Algorithms and Data Structures</p></div>
-    <div class = "right-align"><p class = "PRO-hours"></p></div>
-    <div><p>DSA</p></div>
-    <div><p>Algorithms and Data Structures</p></div>
-    <div class = "right-align"><p class = "AUT-hours"></p></div>
-    <div><p>DSA</p></div>
-    <div><p>Algorithms and Data Structures</p></div>
-
-    <button>Add</button>
-    <input class="subject-abbreviation-input">
-    <input class="subject-name-input">`;
-     */
-
     document.querySelector('.subjects-information').innerHTML = hoursNumberHTML;
 }
 
