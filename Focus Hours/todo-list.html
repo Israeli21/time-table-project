@@ -6,22 +6,24 @@
     <link rel = "stylesheet" href = "/time-table-project/Focus Hours/todo-list.css">
   </head>
   <body>
-    <div class="focus-hour-top-section">
-      <p class="focus-hour-subtitle">Focus Hours:</p>
-      <div class="button-group">
-        <span><button class="js-edit-button edit-focus-hours-button">Edit Focus Hours</button></span>
-        <span><button class="js-save-button save-focus-hours-button">Save Focus Hours</button></span>
+    <div class="focus-hour-section">
+      <div class="focus-hour-top-section">
+        <p class="focus-hour-subtitle">Focus Hours:</p>
+        <div class="button-group">
+          <span><button class="js-edit-button edit-focus-hours-button">Edit Focus Hours</button></span>
+          <span><button class="js-save-button save-focus-hours-button">Save Focus Hours</button></span>
+        </div>
       </div>
+      <div class = "focus-input-grid">
+        <div class="focus-hour-number"><p>0 hr.</p></div>
+        <input placeholder = "Abr"
+          class = "js-abb-input abb-input">
+        <input placeholder = "Focus Hour Name"
+          class = "js-focus-hour-input focus-hour-input">
+        <button class = "add-todo-button js-add-todo-button">Add</button>
+      </div>
+      <div class = "js-todo-list todo-grid"></div>
     </div>
-    <div class = "todo-input-grid">
-      <div class="focus-hour-number"><p>0 hr.</p></div>
-      <input placeholder = "Abr"
-        class = "js-name-input name-input">
-      <input placeholder = "Focus Hour Name"
-        class = "js-focus-hour-input focus-hour-input">
-      <button class = "add-todo-button js-add-todo-button">Add</button>
-    </div>
-    <div class = "js-todo-list todo-grid"></div>
 
     <script src = "todo-list.js"></script>
   </body>

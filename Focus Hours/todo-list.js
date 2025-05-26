@@ -31,11 +31,14 @@ function renderTodoList(){
                 renderTodoList();
             });
     });
-
 }
 
 document.querySelector('.js-edit-button').addEventListener('click', () => {
-  document.querySelector('.focus-hour-top-section').classList.add('is-editing');
+  document.querySelector('.focus-hour-section').classList.add('is-editing');
+});
+
+document.querySelector('.js-save-button').addEventListener('click', () => {
+  document.querySelector('.focus-hour-section').classList.remove('is-editing');
 });
 
 document.querySelector('.js-save-button').addEventListener('click', () => {
@@ -47,7 +50,7 @@ document.querySelector('.js-add-todo-button').addEventListener('click', () => {
 });
 
 function addTodo(){
-    const inputElement = document.querySelector('.js-name-input');
+    const inputElement = document.querySelector('.js-abb-input');
     const abb = inputElement.value;
     
     const dateInputElement = document.querySelector('.js-focus-hour-input');

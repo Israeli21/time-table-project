@@ -3,7 +3,7 @@ body{
 }
 
 .todo-grid,
-.todo-input-grid{
+.focus-input-grid{
     display: grid;
     grid-template-columns: 50px 45px 325px 100px;
     column-gap: 10px;
@@ -11,7 +11,7 @@ body{
     align-items: center;
 }
 
-.todo-input-grid{
+.focus-input-grid{
     margin-bottom: 10px;
     align-items: stretch;
 }
@@ -27,7 +27,7 @@ body{
     justify-content: center;    /* horizontal alignment */
 }
 
-.name-input,
+.abb-input,
 .focus-hour-input{
     font-size: 15px;
     padding: 6px;
@@ -82,13 +82,30 @@ body{
 }
 
 .focus-hour-top-section .save-focus-hours-button {
-  display: none;
+    display: none;
 }
 
 .focus-hour-top-section.is-editing .edit-focus-hours-button {
-  display: none;
+    display: none;
+}
+
+.focus-hour-section.is-editing .edit-focus-hours-button{
+    display: none;
+}
+
+.focus-input-grid{
+    display: none;
+}
+
+.is-editing .focus-input-grid{
+    display: grid;
+    grid-template-columns: 50px 45px 325px 100px;
+}
+
+.focus-hour-section.is-editing .save-focus-hours-button{
+    display: inline-block;
 }
 
 .focus-hour-top-section.is-editing .save-focus-hours-button {
-  display: inline-block;
+    display: inline-block;
 }
