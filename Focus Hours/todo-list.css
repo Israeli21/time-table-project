@@ -35,7 +35,8 @@ body{
 
 .add-todo-button,
 .delete-todo-button,
-.edit-focus-hours-button{
+.edit-focus-hours-button,
+.save-focus-hours-button{
     background-color: green;
     color: white;
     border: none;
@@ -49,7 +50,8 @@ body{
     padding-bottom: 10px;
 }
 
-.edit-focus-hours-button{
+.edit-focus-hours-button,
+.save-focus-hours-button{
     background-color: black;
     padding: 0px 12px;
     margin-left: 245px;
@@ -70,4 +72,16 @@ body{
 .focus-hour-top-section{
     display: flex;
     width: 550px;
+}
+
+.focus-hour-top-section .save-focus-hours-button {
+  display: none;
+}
+
+.focus-hour-top-section.is-editing .edit-focus-hours-button {
+  display: none;
+}
+
+.focus-hour-top-section.is-editing .save-focus-hours-button {
+  display: inline-block;
 }

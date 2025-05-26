@@ -31,7 +31,16 @@ function renderTodoList(){
                 renderTodoList();
             });
     });
+
 }
+
+document.querySelector('.js-edit-button').addEventListener('click', () => {
+  document.querySelector('.focus-hour-top-section').classList.add('is-editing');
+});
+
+document.querySelector('.js-save-button').addEventListener('click', () => {
+  document.querySelector('.focus-hour-top-section').classList.remove('is-editing');
+});
 
 document.querySelector('.js-add-todo-button').addEventListener('click', () => {
     addTodo();
