@@ -50,23 +50,29 @@ document.querySelector('.js-add-todo-button').addEventListener('click', () => {
 });
 
 function addTodo(){
-    const inputElement = document.querySelector('.js-abb-input');
-    const abb = inputElement.value;
-    
-    const dateInputElement = document.querySelector('.js-focus-hour-input');
-    const focusName = dateInputElement.value;
+  const inputElement = document.querySelector('.js-abb-input');
+  const abb = inputElement.value.trim();
 
-    todoList.push({
-        abb,
-        focusName
-    });
+  const dateInputElement = document.querySelector('.js-focus-hour-input');
+  const focusName = dateInputElement.value.trim();
 
-    inputElement.value = '';
+  if (abb.length < 1 || abb.length > 3) {
+    alert("Abbreviation must be between 1 and 3 characters.");
+    return;
+  }
 
-    renderTodoList();
+  if (focusName.length < 1) {
+    alert("Focus Hour Name must have at least 1 characters.");
+    return;
+  }
+
+  todoList.push({
+    abb,
+    focusName
+  });
+
+  inputElement.value = '';
+  dateInputElement.value = '';
+
+  renderTodoList();
 }
-
-// Closure:
-// - If a function has access to a value
-// - It will always have access to that value
-// - values gets packaged together (enclosed) with the function
