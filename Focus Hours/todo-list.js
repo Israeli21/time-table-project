@@ -1,9 +1,9 @@
 const todoList = [{
     abb: 'PRO',
-    dueDate: 'Projects'
+    focusName: 'Projects'
 }, {
     abb: 'DAT',
-    dueDate: 'Data Science'
+    focusName: 'Data Science'
 }];
 
 renderTodoList();
@@ -12,12 +12,12 @@ renderTodoList();
 function renderTodoList(){
     let todoListHTML = '';
     todoList.forEach((todoObject, index) =>{
-        const {abb, dueDate} = todoObject;
+        const {abb, focusName} = todoObject;
         const html = `
         <div  class="focus-hour-number"><p>0 hr.</p></div>
         <div class="right-alignment">${abb}</div>
-        <div>= ${dueDate}</div>
-            <button class = "delete-todo-button js-delete-todo-button">Delete</button>
+        <div>= ${focusName}</div>
+        <button class = "delete-todo-button js-delete-todo-button">Delete</button>
         `;  // Generating an HTML
         todoListHTML += html;
     });
@@ -54,11 +54,11 @@ function addTodo(){
     const abb = inputElement.value;
     
     const dateInputElement = document.querySelector('.js-focus-hour-input');
-    const dueDate = dateInputElement.value;
+    const focusName = dateInputElement.value;
 
     todoList.push({
         abb,
-        dueDate
+        focusName
     });
 
     inputElement.value = '';

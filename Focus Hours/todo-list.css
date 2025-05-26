@@ -105,7 +105,3 @@ body{
 .focus-hour-section.is-editing .save-focus-hours-button{
     display: inline-block;
 }
-
-.focus-hour-top-section.is-editing .save-focus-hours-button {
-    display: inline-block;
-}
