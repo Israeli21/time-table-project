@@ -5,7 +5,7 @@ body{
 .todo-grid,
 .todo-input-grid{
     display: grid;
-    grid-template-columns: 50px 45px 300px 100px;
+    grid-template-columns: 50px 45px 325px 100px;
     column-gap: 10px;
     row-gap: 10px;
     align-items: center;
@@ -71,7 +71,14 @@ body{
 
 .focus-hour-top-section{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 550px;
+}
+
+.button-group{
+    display: relative;
+    right: 0px;
 }
 
 .focus-hour-top-section .save-focus-hours-button {
