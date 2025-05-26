@@ -1,4 +1,4 @@
-const todoList = [{
+let todoList = JSON.parse(localStorage.getItem('todoList')) || [{
     abb: 'PRO',
     focusName: 'Projects'
 }, {
@@ -7,6 +7,10 @@ const todoList = [{
 }];
 
 renderTodoList();
+
+function saveToStorage(){
+    localStorage.setItem('todoList', JSON.stringify(todoList));
+}
 
 // Regular Functions enable Hoisting
 function renderTodoList(){
@@ -28,6 +32,7 @@ function renderTodoList(){
         .forEach((deleteButton, index) => {
             deleteButton.addEventListener('click', () => {
                 todoList.splice(index, 1);
+                saveToStorage();
                 renderTodoList();
             });
     });
@@ -71,6 +76,7 @@ function addTodo(){
     focusName
   });
 
+  saveToStorage();
   inputElement.value = '';
   dateInputElement.value = '';
 
