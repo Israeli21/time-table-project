@@ -81,8 +81,18 @@ body{
     right: 0px;
 }
 
-.focus-hour-top-section .save-focus-hours-button {
+.focus-hour-top-section .save-focus-hours-button,
+.todo-grid .delete-todo-button {
     display: none;
+}
+
+.todo-grid{
+    display: grid;
+    grid-template-columns: 50px 45px 325px;
+}
+
+.todo-grid.is-editing .delete-todo-button{
+    display: inline-block;
 }
 
 .focus-hour-top-section.is-editing .edit-focus-hours-button {
@@ -93,11 +103,20 @@ body{
     display: none;
 }
 
+.delete-todo-button {
+  display: none;
+}
+
+.focus-hour-section.is-editing .delete-todo-button {
+  display: inline-block;
+}
+
 .focus-input-grid{
     display: none;
 }
 
-.is-editing .focus-input-grid{
+.is-editing .focus-input-grid,
+.is-editing .todo-grid{
     display: grid;
     grid-template-columns: 50px 45px 325px 100px;
 }
