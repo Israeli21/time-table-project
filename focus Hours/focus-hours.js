@@ -82,3 +82,13 @@ function addTodo(){
 
   renderTodoList();
 }
+
+// Lines 86 - 94 are Backend Practice
+document.addEventListener('DOMContentLoaded', () => {
+  fetch('http://localhost:3000/get-word')
+    .then(res => res.json())
+    .then(data => {
+      console.log('Fetched from backend in focus-hours.js:', data.word);
+    })
+    .catch(err => console.error('Error fetching word:', err));
+});

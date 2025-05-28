@@ -163,3 +163,14 @@ function restoreInputValues() {
 
 // Call the restore function after the HTML is generated
 restoreInputValues();
+
+// Lines 167 - 176 is Backend Practice
+// Send "Apple" to backend when page loads
+fetch('http://localhost:3000/save-word', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ word: 'Watermelon' })
+})
+.then(res => res.text())
+.then(message => console.log(message))
+.catch(err => console.error('Error:', err));
