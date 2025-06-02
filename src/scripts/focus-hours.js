@@ -20,7 +20,7 @@ function renderTodoList(){
         const html = `
         <div  class="focus-hour-number"><p>0 hr.</p></div>
         <div class="right-alignment">${abb}</div>
-        <div>= ${focusName}</div>
+        <div>=  ${focusName}</div>
         <button class = "delete-todo-button js-delete-todo-button">Delete</button>
         `;  // Generating an HTML
         todoListHTML += html;
