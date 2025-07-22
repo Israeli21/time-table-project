@@ -173,4 +173,4 @@ fetch('http://localhost:3000/save-word', {
 })
 .then(res => res.text())
 .then(message => console.log(message))
-.catch(err => console.error('Error:', err));
+.catch(err => console.error('Error: Dis not workin', err));
